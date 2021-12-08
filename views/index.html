@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1><span>URL Shortener Microservice</span></h1>
+    <main>
+      <form action="api/shorturl" method="POST">
+        <fieldset>
+          <legend>URL Shortener</legend>
+            <div id="container">
+              <label for="url_input">URL:</label>
+              <input id="url_input" type="text" name="url" placeholder="https://short.repl.co"/>
+              <input id="button" type="submit" value="POST URL"/>
+            </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
